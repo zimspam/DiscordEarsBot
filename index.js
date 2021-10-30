@@ -346,7 +346,7 @@ function process_commands_query(txt, mapKey, user) {
     if (txt && txt.length) {
         let val = guildMap.get(mapKey);
         // val.text_Channel.send(user.username + ': ' + txt)
-        val.text_Channel.send(txt)
+        val.text_Channel.send('!' + txt)
     }
 }
 
